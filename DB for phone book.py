@@ -7,6 +7,6 @@ cursor.execute("""Create table PhoneBook
                     first_name TEXT NOT NULL,
                     last_name TEXT,
                     phone TEXT NOT NULL
-                    constraint CK_Phone_book_phone CHECK (phone LIKE ('[0-9][0-9][0-9])[0-9][0-9][0-9][0-9][0-9][0-9][0-9]')),
+                    constraint CK_PhoneBook_phone CHECK (phone LIKE ('[0-9][0-9][0-9])[0-9][0-9][0-9][0-9][0-9][0-9][0-9]')),
                     comment TEXT)""")
 conn.commit()
