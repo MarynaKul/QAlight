@@ -1,0 +1,2 @@
+import numeralsCalculator
+numeralsCalculator.calculate()
